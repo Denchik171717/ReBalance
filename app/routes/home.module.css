@@ -1,0 +1,166 @@
+.page {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, var(--color-neutral-1), var(--color-neutral-2));
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--space-8) var(--space-6);
+}
+
+/* Приветствие */
+.welcome {
+  text-align: center;
+  margin-bottom: var(--space-9);
+  padding: var(--space-8) var(--space-4);
+}
+
+.title {
+  font: var(--font-display);
+  color: var(--color-neutral-12);
+  margin-bottom: var(--space-4);
+  background: linear-gradient(135deg, var(--color-accent-11), var(--color-success-11));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.subtitle {
+  font: var(--font-subheading);
+  color: var(--color-neutral-11);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Блоки состояния и прогресса */
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-6);
+  margin-bottom: var(--space-8);
+}
+
+.statCard {
+  background: var(--color-neutral-1);
+  border: 1px solid var(--color-neutral-6);
+  border-radius: var(--radius-4);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-2);
+  transition: all 0.3s var(--ease);
+}
+
+.statCard:hover {
+  box-shadow: var(--shadow-3);
+  transform: translateY(-2px);
+}
+
+.statTitle {
+  font-size: var(--font-size-3);
+  font-weight: 600;
+  color: var(--color-neutral-12);
+  margin-bottom: var(--space-4);
+}
+
+.statValue {
+  color: var(--color-neutral-11);
+  line-height: 1.6;
+  margin-bottom: var(--space-2);
+}
+
+.statPlaceholder {
+  color: var(--color-neutral-10);
+  font-style: italic;
+}
+
+/* Быстрые действия */
+.actions {
+  margin-bottom: var(--space-8);
+}
+
+.actionsTitle {
+  font: var(--font-heading);
+  color: var(--color-neutral-12);
+  margin-bottom: var(--space-5);
+  text-align: center;
+}
+
+.actionsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-5);
+}
+
+.actionCard {
+  background: var(--color-neutral-1);
+  border: 1px solid var(--color-neutral-6);
+  border-radius: var(--radius-4);
+  padding: var(--space-6);
+  text-decoration: none;
+  transition: all 0.3s var(--ease);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.actionCard:hover {
+  border-color: var(--color-accent-7);
+  box-shadow: var(--shadow-3);
+  transform: translateY(-4px);
+}
+
+.actionCard h3 {
+  font-size: var(--font-size-3);
+  font-weight: 600;
+  color: var(--color-neutral-12);
+  margin: 0;
+}
+
+.actionCard p {
+  color: var(--color-neutral-11);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* График */
+.chartSection {
+  background: var(--color-neutral-1);
+  border: 1px solid var(--color-neutral-6);
+  border-radius: var(--radius-4);
+  padding: var(--space-7);
+  box-shadow: var(--shadow-2);
+}
+
+.chartTitle {
+  font-size: var(--font-size-3);
+  font-weight: 600;
+  color: var(--color-neutral-12);
+  margin-bottom: var(--space-4);
+}
+
+.chartContainer {
+  margin-top: var(--space-5);
+  height: 300px;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .container {
+    padding: var(--space-6) var(--space-4);
+  }
+
+  .welcome {
+    padding: var(--space-6) var(--space-2);
+    margin-bottom: var(--space-7);
+  }
+
+  .statsGrid {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+
+  .actionsGrid {
+    grid-template-columns: 1fr;
+  }
+}

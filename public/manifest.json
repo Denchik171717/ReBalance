@@ -1,0 +1,54 @@
+{
+  "name": "ReBalance",
+  "short_name": "ReBalance",
+  "description": "Приложение для профилактики эмоционального выгорания и управления стрессом",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#6e56cf",
+  "orientation": "portrait",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["health", "lifestyle", "wellness"],
+  "lang": "ru",
+  "dir": "ltr",
+  "shortcuts": [
+    {
+      "name": "Пройти тест",
+      "short_name": "Тест",
+      "description": "Оценить эмоциональное состояние",
+      "url": "/assessment",
+      "icons": [
+        {
+          "src": "/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    },
+    {
+      "name": "Мой прогресс",
+      "short_name": "Прогресс",
+      "description": "Посмотреть статистику",
+      "url": "/progress",
+      "icons": [
+        {
+          "src": "/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ]
+}
