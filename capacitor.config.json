@@ -1,0 +1,9 @@
+{
+  "appId": "com.rebalance.app",
+  "appName": "ReBalance",
+  "webDir": "build/client",
+  "server": {
+    "url": "http://10.24.255.145:5173",
+    "cleartext": true
+  }
+}

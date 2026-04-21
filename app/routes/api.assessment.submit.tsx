@@ -1,4 +1,4 @@
-import { data } from "react-router";
+ import { data } from "react-router";
 import type { Route } from "./+types/api.assessment.submit";
 import { getSessionFromRequest, getSession } from "~/services/session.server";
 import { saveAssessmentScore, updateStudyTime } from "~/services/user.server";

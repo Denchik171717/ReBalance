@@ -3,7 +3,7 @@ import type { UserSession } from "~/types/user";
 
 const sessionCookie = createCookie("user_session", {
   httpOnly: true,
-  secure: process.env.NODE_ENV === "production",
+  secure: false,
   sameSite: "lax",
   maxAge: 60 * 60 * 24 * 30, // 30 days
 });
