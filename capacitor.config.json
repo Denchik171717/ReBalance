@@ -3,7 +3,7 @@
   "appName": "ReBalance",
   "webDir": "build/client",
   "server": {
-    "url": "http://10.19.51.145:3000",
+    "url": "http://192.168.0.198:3000",
     "cleartext": true
   }
 }
