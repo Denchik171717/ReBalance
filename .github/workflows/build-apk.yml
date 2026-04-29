@@ -37,9 +37,9 @@ jobs:
           npm install @capacitor/core @capacitor/cli @capacitor/android
           npx cap add android
 
-      - name: Configure Capacitor for local dev server
-        run: |
-          echo '{"appId":"com.rebalance.app","appName":"ReBalance","webDir":"build/client","server":{"url":"http://10.19.51.145:5173","cleartext":true}}' > capacitor.config.json
+      # - name: Configure Capacitor for local dev server
+      #   run: |
+      #     echo '{"appId":"com.rebalance.app","appName":"ReBalance","webDir":"build/client","server":{"url":"http://10.19.51.145:5173","cleartext":true}}' > capacitor.config.json
 
       - name: Sync with Android
         run: npx cap sync android
