@@ -31,7 +31,7 @@ export function AuthGuard({ children, user }: AuthGuardProps) {
         <CardHeader>
           <CardTitle>Добро пожаловать!</CardTitle>
           <CardDescription>
-            Войдите, чтобы начать подготовку к экзамену
+            Войдите, чтобы начать свой путь к спокойствию
           </CardDescription>
         </CardHeader>
         <CardContent>

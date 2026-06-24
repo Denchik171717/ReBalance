@@ -149,3 +149,15 @@ html {
   --amber-11: #ccb178;
   --amber-12: #efe5d2;
 }
+
+/* Базовые стили для светлой и тёмной темы */
+html, body {
+  background-color: var(--color-neutral-1);
+  color: var(--color-neutral-12);
+}
+
+/* Стили конкретно для светлой темы (когда класс dark-theme отсутствует) */
+html:not(.dark-theme) body {
+  background-color: var(--sage-1);
+  color: var(--sage-12);
+}
